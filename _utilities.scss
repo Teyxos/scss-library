@@ -1,0 +1,42 @@
+@use '_variables' as v;
+
+// Backgrounds
+@each $prop, $var in v.$colors {
+  .bg-#{$prop} {
+    background-color: #{$var};
+  }
+}
+
+// Text colors
+@each $prop, $var in v.$colors {
+  .text-#{$prop} {
+    color: #{$var};
+  }
+}
+
+// Dislay Types
+@each $var in v.$display {
+  .d-#{$var} {
+    display: #{$var};
+  }
+}
+
+// Flexbox
+
+@each $var in v.$justify-content {
+  .justify-#{$var} {
+    justify-content: #{$var};
+  }
+}
+
+@each $var in v.$align-items {
+  .aling-items-#{$var} {
+    align-items: #{$var};
+  }
+}
+
+@each $var in v.$align-content {
+  .aling-content-#{$var} {
+    align-content: #{$var};
+  }
+}

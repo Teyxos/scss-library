@@ -1,0 +1,40 @@
+// Colors
+$colors: (
+  'primary': #4361ee,
+  'secondary': #9e0059,
+  'success': #2b9348,
+  'danger': #dc2f02,
+  'warning': #f9c74f,
+  'info': #6610f2,
+) !default;
+
+$display: (none, flex, inline-flex, block, inline-block, inline, grid);
+
+// Flexbox variables
+$justify-content: (
+  'flex-start',
+  'flex-end',
+  'center',
+  'space-between',
+  'space-around',
+  'space-evenly'
+);
+
+$align-items: (
+  'flex-start',
+  'flex-end',
+  'center',
+  'start',
+  'end',
+  'baseline',
+  'stretch'
+);
+
+$align-content: (
+  'flex-start',
+  'flex-end',
+  'center',
+  'space-between',
+  'space-around',
+  'stretch'
+);
