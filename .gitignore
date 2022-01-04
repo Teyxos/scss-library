@@ -1,1 +1,6 @@
-dist/   
+# Disttribution Folder
+dist/
+
+
+# Test files
+*.html
