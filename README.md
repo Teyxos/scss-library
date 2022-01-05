@@ -51,11 +51,56 @@ To loop we have differents options like `@each` function or `@for` function.
 In this tutorial / guide we are going to use `@each`. Example:
 
 ```scss
+// Looping in list
+
+@each $var in $list {
+  .something-#{$var} {
+    color: #{$var};
+  }
+}
+
+// $colors from the previous example. Looping in maps
+
 @each $prop, $var in $colors {
   // We use #{} to insert varibles
 
   .bg-#{$prop} {
     background-color: #{$var};
   }
+}
+```
+
+## Importing
+
+To import some file we can use two ways: `@use` or `@forward`, there is also a `@import` but it is decrapted.
+
+We use `@use` when we are going to use that file variables or mixins (Explained later). And we use `@forward` when we are only forwarding that file variables or mixins. Example:
+
+```scss
+// main.scss
+
+// We use "as *" so we can access by its names you can also add you prefix
+@use '_variables' as *;
+@use 'mixins' as m;
+
+body {
+  color: $text-color;
+  @include m.mixin1();
+}
+```
+
+```scss
+// _variables.scss
+$text-color: white;
+
+// Other variales
+```
+
+```scss
+// mixins.scss
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 ```
