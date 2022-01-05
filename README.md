@@ -104,3 +104,59 @@ $text-color: white;
   list-style: none;
 }
 ```
+
+## Mixins
+
+A mixin is a part of code that can be re-used. Example:
+
+```scss
+// To declare it just use @mixin
+
+@mixin name {
+  // Declarations
+}
+
+// To use it use @include
+
+body {
+  @include name;
+}
+
+// They can also take arguments
+
+@mixin name($argument1, $argument2) {
+  margin: $argument1;
+}
+
+body {
+  @include name(24em, 0);
+}
+
+// Compiled
+body {
+  margin: 24em;
+}
+
+// Optional arguments
+@mixin name($argument1: 50%) {
+  margin: $argument1;
+}
+
+body {
+  @include name(40%);
+}
+
+p {
+  @include name;
+}
+
+// Compiled
+
+body {
+  margin: 40%;
+}
+
+p {
+  margin: 50%;
+}
+```
