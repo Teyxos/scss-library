@@ -1,10 +1,10 @@
 # Info
 
-This is just a project I'm working on and a guide on how to make a class-based CSS Library I will update this README with some infomation and example in some time
+This is just a project I'm working on and a guide on how to make a class-based CSS Library I will update this README with some information and example in some time
 
 # How to start
 
-## First of all you need a SASS Compiler
+## First you need a SASS Compiler
 
 I use a node package but there is more. For install it run:
 
@@ -23,16 +23,16 @@ sass input.scss output.css
 To declare a variable is simple as put a $ before the name. There are other types of variables like maps or list
 
 ```scss
-$variable: "value"
+$variable: "value";
 
-$list: 1em, 2em, 3em
+$list: 1em, 2em, 3em;
 
 $maps: (
     "key": "val"
 )
 ```
 
-We are gonna use this to loops thourgh values so we can generate classes for every color. Example:
+We are going to use this to loops through values, so we can generate classes for every color. Example:
 
 ```scss
 $colors: (
@@ -47,7 +47,7 @@ $colors: (
 
 ## Looping
 
-To loop we have differents options like `@each` function or `@for` function.
+To loop we have different options like `@each` function or `@for` function.
 In this tutorial / guide we are going to use `@each`. Example:
 
 ```scss
@@ -62,7 +62,7 @@ In this tutorial / guide we are going to use `@each`. Example:
 // $colors from the previous example. Looping in maps
 
 @each $prop, $var in $colors {
-  // We use #{} to insert varibles
+  // We use #{} to insert variables
 
   .bg-#{$prop} {
     background-color: #{$var};
@@ -72,9 +72,9 @@ In this tutorial / guide we are going to use `@each`. Example:
 
 ## Importing
 
-To import some file we can use two ways: `@use` or `@forward`, there is also a `@import` but it is decrapted.
+To import some file we can use two ways: `@use` or `@forward`, there is also a `@import` but it is deprecated.
 
-We use `@use` when we are going to use that file variables or mixins (Explained later). And we use `@forward` when we are only forwarding that file variables or mixins. Example:
+We use `@use` when we are going to use that file variables or mixins (Explained later).And we use `@forward` when we are only forwarding that file variables or mixins. Example:
 
 ```scss
 // main.scss
@@ -85,7 +85,7 @@ We use `@use` when we are going to use that file variables or mixins (Explained 
 
 body {
   color: $text-color;
-  @include m.mixin1();
+  @include m.reset-list();
 }
 ```
 
@@ -93,7 +93,7 @@ body {
 // _variables.scss
 $text-color: white;
 
-// Other variales
+// Other variables
 ```
 
 ```scss
@@ -160,3 +160,5 @@ p {
   margin: 50%;
 }
 ```
+
+Now we have covered all the basic let's get into something of code
