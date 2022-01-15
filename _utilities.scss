@@ -1,20 +1,21 @@
 @use '_variables' as v;
 
-// Backgrounds
+// We import the colors map from _variables file to use it here
+// We deconstruct the map to use the 2 values. In a list we'll only pass 1 variable instead of 2
 @each $prop, $var in v.$colors {
   .bg-#{$prop} {
     background-color: #{$var};
   }
 }
 
-// Text colors
+// We do the same as before but with another class
 @each $prop, $var in v.$colors {
   .text-#{$prop} {
     color: #{$var};
   }
 }
 
-// Dislay Types
+// Display Types
 @each $var in v.$display {
   .d-#{$var} {
     display: #{$var};
@@ -30,13 +31,13 @@
 }
 
 @each $var in v.$align-items {
-  .aling-items-#{$var} {
+  .align-items-#{$var} {
     align-items: #{$var};
   }
 }
 
 @each $var in v.$align-content {
-  .aling-content-#{$var} {
+  .align-content-#{$var} {
     align-content: #{$var};
   }
 }
