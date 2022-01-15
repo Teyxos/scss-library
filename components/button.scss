@@ -1,0 +1,17 @@
+@use "../_variables" as *;
+
+@each $prop, $var in $colors {
+  .btn-#{$prop} {
+    background-color: #{$var};
+    padding: 2em;
+
+    // We add a conditional to make it look good
+    @if $var == #4361ee {
+      color: black;
+    } @else if $var == #f9c74f {
+      color: black;
+    } @else {
+      color: white;
+    }
+  }
+}
