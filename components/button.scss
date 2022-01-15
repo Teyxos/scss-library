@@ -3,7 +3,10 @@
 @each $prop, $var in $colors {
   .btn-#{$prop} {
     background-color: #{$var};
-    padding: 2em;
+    padding: 0.75em 1.2em;
+    font-size: 1.12em;
+    border: none;
+    border-radius: 12px;
 
     // We add a conditional to make it look good
     @if $var == #4361ee {

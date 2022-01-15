@@ -2,7 +2,7 @@
 
 For this moment you should have some classes, so we'll use them for our first component a Button
 
-More examples in `./components/*.scss`
+More examples in `./components/*.scss` or in `./component.scss`
 
 # Making the component
 
