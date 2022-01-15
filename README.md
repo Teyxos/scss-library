@@ -162,3 +162,5 @@ p {
 ```
 
 Now we have covered all the basic let's get into something of code
+
+[An Internal Link](blob/master/Lessons/1%20-%20Initial%20Code.md)
