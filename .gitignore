@@ -4,3 +4,6 @@ dist/
 
 # Test files
 *.html
+
+# IDE folder
+.idea/
