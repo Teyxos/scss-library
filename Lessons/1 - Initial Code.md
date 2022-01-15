@@ -2,7 +2,6 @@
 
 Feel free to copy this repo for the initial code or write it out reading this
 
-
 # Files
 
 The file structure can be as you want, but in the tutorial will be using the next structure.
@@ -22,13 +21,15 @@ The file structure can be as you want, but in the tutorial will be using the nex
 # Compiler
 
 As I say in the README you need a compiler you can use whatever you want. We'll use the node sass compiler
+
 ````sh
 npm install -g sass
 ````
 
 # Code
 
-We'll start by making some loops for background colors and text colors (See  _utilities.scss for more detailed example). For this we'll base on bootstrap colors
+We'll start by making some loops for background colors and text colors (See  _utilities.scss for more detailed example).
+For this we'll base on bootstrap colors
 
 ````scss
 $colors: (
@@ -59,4 +60,4 @@ You can follow along this to make as many classes as you want these are the basi
 
 On the next lesson we'll make our first component
 
-[To lesson 2](Lessons/2%20-%20Our%20first%20component.md)
+[To lesson 2](/2%20-%20Our%20first%20component.md)
