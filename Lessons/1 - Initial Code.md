@@ -54,3 +54,9 @@ $colors: (
   }
 }
 ````
+
+You can follow along this to make as many classes as you want these are the basics for making the full library.
+
+On the next lesson we'll make our first component
+
+[To lesson 2](Lessons/2%20-%20Our%20first%20component.md)
