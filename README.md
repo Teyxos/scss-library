@@ -28,20 +28,20 @@ $variable: "value";
 $list: 1em, 2em, 3em;
 
 $maps: (
-    "key": "val"
-)
+  "key": "val",
+);
 ```
 
 We are going to use this to loops through values, so we can generate classes for every color. Example:
 
 ```scss
 $colors: (
-  'primary': blue,
-  'secondary': gray,
-  'success': green,
-  'danger': red,
-  'warning': orange,
-  'info': teal,
+  "primary": blue,
+  "secondary": gray,
+  "success": green,
+  "danger": red,
+  "warning": orange,
+  "info": teal,
 );
 ```
 
@@ -80,8 +80,8 @@ We use `@use` when we are going to use that file variables or mixins (Explained 
 // main.scss
 
 // We use "as *" so we can access by its names you can also add you prefix
-@use '_variables' as *;
-@use 'mixins' as m;
+@use "_variables" as *;
+@use "mixins" as m;
 
 body {
   color: $text-color;
